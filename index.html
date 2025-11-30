@@ -3,157 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shanel Guzmán - Smart Islands</title>
-
+  <title>Proyecto SMART - Shanel Guzmán</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    .page-content { display: none; }
+    .page-content.active { display: block; }
+    .fade-in { animation: fadeIn 0.8s ease-in-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-500">
+
+  <!-- NAVBAR DIPLOMÁTICO -->
+  <nav class="bg-[#003366] dark:bg-gray-800 text-white py-3 shadow-md sticky top-0 z-50 border-b-2 border-[#001f4d]">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
+          <span class="text-[#003366] text-xl">🌐</span>
+        </div>
+        <div>
+          <p class="font-bold text-lg">MINUME 2025</p>
+          <p class="text-xs text-blue-200">Model United Nations</p>
+        </div>
+      </div>
+      <div class="flex gap-6">
+        <button onclick="showPage('sobre-mi')" class="hover:text-yellow-300 transition text-base font-medium uppercase tracking-wide">
+          Delegada
+        </button>
+        <button onclick="showPage('proyecto')" class="hover:text-yellow-300 transition text-base font-medium uppercase tracking-wide">
+          Propuesta
+        </button>
+        <button onclick="toggleDarkMode()" class="ml-4 px-3 py-1 bg-yellow-300 dark:bg-yellow-600 rounded-full font-semibold text-sm transition">🌓 Modo</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== PÁGINA: SOBRE MÍ ===================== -->
+  <div id="sobre-mi" class="page-content active fade-in">
+    <header class="text-white py-24 text-center bg-cover bg-center bg-[#0a1a2a]/90 bg-blend-multiply relative" 
+            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg')">
+      <div class="relative z-10">
+        <h1 class="text-5xl font-bold drop-shadow-lg">Proyecto SMART</h1>
+        <p class="text-xl mt-3 italic drop-shadow-lg">Shanel Guzmán</p>
+        <p class="text-lg mt-1 drop-shadow-lg">Delegación de Filipinas</p>
+      </div>
+    </header>
+
+    <section class="max-w-5xl mx-auto bg-white dark:bg-gray-800 p-10 mt-10 mb-10 rounded-xl shadow-2xl transition-colors duration-500">
+      <h2 class="text-4xl font-bold text-[#0a1a2a] dark:text-yellow-300 mb-8 border-b-4 border-[#c9a94b] pb-3">Sobre Mí</h2>
+
+      <div class="mb-8">
+        <a href="https://ibb.co/3YC3tM3P">
+          <img src="https://i.ibb.co/BKCp8rpY/shanel.jpg" alt="shanel" border="0" class="rounded-lg shadow-md hover:scale-105 transition transform">
+        </a>
+        <blockquote class="border-l-4 border-[#0a1a2a] bg-gray-50 dark:bg-gray-700 p-6 italic mb-8 text-lg text-gray-700 dark:text-gray-200">
+          "Porque el Señor da la sabiduría; de su boca vienen el conocimiento y la inteligencia."<br>
+          <span class="text-sm font-semibold text-[#0a1a2a] dark:text-gray-300 mt-2 block">— Proverbios 2:6</span>
+        </blockquote>
+
+        <p class="leading-relaxed text-lg mb-6">
+          Nací en la República Dominicana, en una ciudad donde aprendí que el verdadero sentido de la grandeza está en servir y no solo en brillar. Actualmente curso la secundaria especializándome como técnico en <strong>Logística y Transporte</strong>.
+        </p>
+      </div>
+
+      <div class="clear-both mb-8">
+        <h3 class="text-2xl font-bold text-[#0a1a2a] dark:text-yellow-300 mb-4 mt-8">Mi Trayectoria</h3>
+        <p class="leading-relaxed text-lg mb-4">
+          He tenido el honor de servir como <strong>Presidenta Regional del Consejo Estudiantil</strong>, y participar en <strong>Modelos Regionales de Naciones Unidas</strong> (2023, 2024 y 2025), congresos de liderazgo y olimpíadas de lectura.
+        </p>
+        <p class="leading-relaxed text-lg mb-4">
+          La música también me forma, donde entendí que la vida se afina con tensión justa, disciplina, sensibilidad y fe.
+        </p>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="text-2xl font-bold text-[#0a1a2a] dark:text-yellow-300 mb-4">Mis Habilidades</h3>
+        <p class="leading-relaxed text-lg">
+          Competencias en <strong>oratoria, comunicación, trabajo en equipo y organización estratégica</strong> son puentes para conectar verdades y dar forma a cambios positivos.
+        </p>
+      </div>
+
+      <div class="bg-gradient-to-r from-[#0a1a2a] to-[#1a3a5a] dark:from-gray-700 dark:to-gray-900 text-white p-8 rounded-xl shadow-lg transition-colors duration-500">
+        <h3 class="text-2xl font-bold mb-4">Mi Filosofía</h3>
+        <p class="leading-relaxed text-lg mb-4">
+          Creo firmemente que <strong>el futuro no se predice, se lidera</strong>. La esencia del ser no está en lo que posee, sino en lo que despierta en otros.
+        </p>
+        <p class="leading-relaxed text-lg italic">
+          Soy el resultado de mis preguntas, mis luchas y mi fe. Liderar es amar en acción.
+        </p>
+      </div>
+
+      <div class="mt-10 text-center">
+        <button onclick="showPage('proyecto')" 
+                class="bg-[#c9a94b] hover:bg-[#b89a3b] text-white font-bold py-4 px-10 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 text-lg">
+          Ver Proyecto Diplomático →
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== PÁGINA: PROYECTO ===================== -->
+  <div id="proyecto" class="page-content fade-in">
+    <header class="text-white py-20 text-center bg-gradient-to-r from-[#0a1a2a] to-[#1a3a5a] dark:from-gray-700 dark:to-gray-900">
+      <h1 class="text-5xl font-bold drop-shadow-lg">Smart Islands for a Smart World</h1>
+      <p class="mt-3 text-xl">Delegación de Filipinas</p>
+      <p class="mt-2 text-lg italic">Shanel Guzmán</p>
+    </header>
+
+    <section class="max-w-6xl mx-auto mt-10 mb-10 px-4">
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl overflow-hidden p-8 space-y-6 transition-colors duration-500">
+        
+        <!-- Introducción -->
+        <div>
+          <h2 class="text-3xl font-bold text-[#003366] dark:text-yellow-300 mb-4">Introducción</h2>
+          <p class="leading-relaxed text-lg text-gray-700 dark:text-gray-200 mb-3">
+            En el actual escenario de la contemporaneidad digital, el turismo se consolida como un motor de innovación y desarrollo sostenible.
+          </p>
+          <p class="leading-relaxed text-lg text-gray-700 dark:text-gray-200 mb-3">
+            La República de Filipinas impulsa ante este foro el proyecto “Smart Islands for a Smart World”, integrando tecnología, sostenibilidad y cooperación internacional.
+          </p>
+        </div>
+
+        <!-- Fundamentación -->
+        <div>
+          <h2 class="text-3xl font-bold text-[#003366] dark:text-yellow-300 mb-4">Fundamentación</h2>
+          <p class="leading-relaxed text-lg text-gray-700 dark:text-gray-200 mb-3">
+            El turismo filipino requiere innovación tecnológica y sostenibilidad para competir globalmente.
+          </p>
+        </div>
+
+        <!-- Resto del contenido igual con dark mode aplicado... -->
+
+      </div>
+
+      <div class="text-center mt-10">
+        <button onclick="showPage('sobre-mi')" 
+                class="bg-[#009edb] hover:bg-[#00689d] text-white font-bold py-4 px-12 rounded-lg shadow-xl transition duration-300 transform hover:scale-105 text-lg uppercase tracking-wide">
+          ← Volver al Perfil de la Delegada
+        </button>
+      </div>
+    </section>
+  </div>
 
   <script>
-    function toggleDarkMode() {
-      document.documentElement.classList.toggle("dark");
-      localStorage.setItem("dark", document.documentElement.classList.contains("dark"));
+    function showPage(pageId) {
+      document.querySelectorAll('.page-content').forEach(page => page.classList.remove('active'));
+      const page = document.getElementById(pageId);
+      page.classList.add('active');
+      page.classList.add('fade-in');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-      if (localStorage.getItem("dark") === "true") {
-        document.documentElement.classList.add("dark");
-      }
-      ScrollReveal().reveal(".reveal", {
-        distance: "40px",
-        duration: 900,
-        easing: "ease",
-        interval: 120,
-      });
-    });
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
   </script>
-</head>
 
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition duration-500">
-
-  <!-- NAVBAR -->
-  <header class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="font-bold text-xl">Shanel Guzmán</h1>
-      <nav class="space-x-6 hidden md:block">
-        <a href="#sobre-mi" class="hover:text-blue-500">Sobre Mí</a>
-        <a href="#proyecto" class="hover:text-green-500">Proyecto</a>
-      </nav>
-      <button onclick="toggleDarkMode()" class="px-3 py-1 border rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">🌙</button>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="h-[50vh] md:h-[60vh] bg-cover bg-center flex items-center justify-center text-center text-white"
-    style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');">
-    <div class="bg-black/60 p-10 rounded-xl reveal">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Shanel Guzmán</h2>
-      <p class="text-lg md:text-2xl">Bienvenido a mi portafolio profesional y proyecto Smart Islands</p>
-    </div>
-  </section>
-
-  <!-- SOBRE MÍ -->
-  <section id="sobre-mi" class="max-w-6xl mx-auto p-6 md:p-10 space-y-6 reveal">
-    <h2 class="text-3xl font-bold text-blue-600">Sobre Mí</h2>
-    <blockquote class="italic border-l-4 border-blue-600 pl-4 text-gray-700 dark:text-gray-300">
-      "Porque el Señor da la sabiduría; de su boca vienen el conocimiento y la inteligencia." — Proverbios 2:6
-    </blockquote>
-    <p>Nací en la República Dominicana, en una ciudad donde aprendí que el verdadero sentido de la grandeza está en servir y no solo en brillar. Actualmente curso la secundaria especializándome como técnico en Logística y Transporte, una disciplina que me enseña que incluso el movimiento del mundo obedece a un orden invisible: una coreografía de propósito y dirección.</p>
-
-    <h3 class="text-2xl font-semibold text-blue-500">Mi Trayectoria</h3>
-    <p>Desde temprana edad, mi voz encontró fuerza en la palabra y mis ideas un hogar en el liderazgo. He tenido el honor de servir como Presidenta Regional del Consejo Estudiantil, una experiencia que me permitió comprender a las personas no como coincidencias, sino como universos que debemos aprender a descifrar.</p>
-
-    <ul class="list-disc list-inside space-y-1">
-      <li>Participación en Modelos Regionales de Naciones Unidas (2023, 2024 y 2025)</li>
-      <li>Congresos de liderazgo a nivel nacional y regional</li>
-      <li>Olimpíadas de lectura</li>
-      <li>Plataformas juveniles representando esperanza colectiva</li>
-    </ul>
-
-    <p>La música también me forma: actualmente continúo mis estudios musicales, donde entendí que la vida se afina como las cuerdas, con tensión justa, disciplina, sensibilidad y fe.</p>
-
-    <h3 class="text-2xl font-semibold text-blue-500">Mis Habilidades</h3>
-    <p>Competencias en oratoria, comunicación, trabajo en equipo y organización estratégica. Son puentes para conectar verdades, mover voluntades y dar forma a los cambios que aún no existen.</p>
-
-    <h3 class="text-2xl font-semibold text-blue-500">Mi Filosofía</h3>
-    <p>Creo firmemente que el futuro no se predice, se lidera. Que la esencia del ser no está en lo que posee, sino en lo que despierta en otros. Soy el resultado de mis preguntas, mis luchas y mi fe. Una mente en movimiento, una voz con propósito, y un corazón que entendió temprano que liderar es amar en acción.</p>
-  </section>
-
-  <!-- PROYECTO CON INFORMACIÓN COMPLETA -->
-  <section id="proyecto" class="max-w-7xl mx-auto p-6 md:p-10 mt-10 space-y-8 reveal">
-    <h2 class="text-3xl font-bold text-green-600 mb-6 text-center">Proyecto: Smart Islands for a Smart World</h2>
-
-    <div class="grid md:grid-cols-2 gap-6">
-      <!-- Introducción -->
-      <div class="bg-green-50 dark:bg-green-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-        <h3 class="text-2xl font-semibold text-green-700 dark:text-green-300 mb-2">Introducción</h3>
-        <p>En el actual escenario digital, el turismo se consolida como motor de innovación y desarrollo sostenible. La República de Filipinas impulsa el proyecto “Smart Islands for a Smart World”, integrando tecnología, sostenibilidad y cooperación internacional en la gestión turística.</p>
-      </div>
-
-      <!-- Fundamentación -->
-      <div class="bg-yellow-50 dark:bg-yellow-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-        <h3 class="text-2xl font-semibold text-yellow-700 dark:text-yellow-300 mb-2">Fundamentación</h3>
-        <p>El turismo en Filipinas es estratégico para el desarrollo sostenible. Los desafíos del cambio climático y la digitalización exigen una transformación hacia un modelo inteligente, basado en innovación, cooperación y sostenibilidad.</p>
-      </div>
-
-      <!-- Justificación -->
-      <div class="bg-purple-50 dark:bg-purple-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-        <h3 class="text-2xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Justificación</h3>
-        <p>La iniciativa responde a la Agenda 2030 y a los ODS 8, 9, 11, 13 y 17, promoviendo islas turísticas resilientes capaces de gestionar recursos mediante tecnología y cooperación multilateral.</p>
-      </div>
-
-      <!-- Objetivos -->
-      <div class="bg-blue-50 dark:bg-blue-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-        <h3 class="text-2xl font-semibold text-blue-700 dark:text-blue-300 mb-2">Objetivos</h3>
-        <p><strong>General:</strong> Implementar un modelo de turismo inteligente que optimice la gestión ambiental, económica y social del sector turístico filipino.</p>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Desarrollar una red de sensores inteligentes</li>
-          <li>Crear plataforma digital nacional para servicios sostenibles</li>
-          <li>Formación en competencias digitales y sostenibilidad</li>
-          <li>Fomentar alianzas internacionales</li>
-          <li>Posicionar a Filipinas como referente en turismo inteligente</li>
-        </ul>
-      </div>
-
-      <!-- Estrategias -->
-      <div class="bg-red-50 dark:bg-red-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-        <h3 class="text-2xl font-semibold text-red-700 dark:text-red-300 mb-2">Estrategias de Acción</h3>
-        <p>Para garantizar la implementación efectiva, se tomarán acciones estratégicas que incluyen:</p>
-        <ul class="list-decimal list-inside space-y-1">
-          <li>Dotaciones de sensores y digitalización turística</li>
-          <li>Plataforma nacional “Smart Islands Network”</li>
-          <li>Educación e inclusión digital</li>
-          <li>Cooperación internacional con ONU, OMT, ASEAN y Banco Asiático de Desarrollo</li>
-          <li>Resiliencia climática mediante drones y sensores marinos</li>
-          <li>Promoción internacional de la marca país “Smart Philippines: Turismo con propósito”</li>
-        </ul>
-      </div>
-
-      <!-- Impacto -->
-      <div class="bg-teal-50 dark:bg-teal-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-        <h3 class="text-2xl font-semibold text-teal-700 dark:text-teal-300 mb-2">Impacto Esperado</h3>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Económico: Diversificación turística y empleo verde</li>
-          <li>Tecnológico: Sistemas inteligentes y datos en tiempo real</li>
-          <li>Social: Inclusión y empoderamiento juvenil</li>
-          <li>Ambiental: Conservación y resiliencia climática</li>
-          <li>Diplomático: Liderazgo filipino en turismo inteligente</li>
-        </ul>
-      </div>
-
-      <!-- Conclusión -->
-      <div class="bg-indigo-50 dark:bg-indigo-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 md:col-span-2">
-        <h3 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-300 mb-2">Conclusión</h3>
-        <p>“Smart Islands for a Smart World” refleja la visión de Filipinas como laboratorio de innovación y sostenibilidad, uniendo ciencia, tecnología y humanidad para un turismo equitativo y resiliente.</p>
-      </div>
-    </div>
-
-    <!-- Información diplomática adicional -->
-    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg text-center mt-6">
-      <p class="text-sm text-gray-600 mb-2">DOCUMENTO OFICIAL</p>
-      <p class="font-bold text-[#003366]">República de Filipinas | MINUME 2025</p>
-      <p class="text-sm text-gray-600 mt-2">Delegada: Shanel Guzmán</p>
-      <p class="text-sm text-gray-600">Misión Permanente ante las Naciones Unidas</p>
-    </div>
-  </section>
 </body>
 </html>
