@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto SMART</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .page-content { display: none; }
+    .page-content.active { display: block; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- NAVBAR ESTILO ONU -->
+  <nav class="bg-[#009edb] text-white py-3 shadow-lg sticky top-0 z-50 border-b-4 border-[#00689d]">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+            <span class="text-[#009edb] font-bold text-xl">🌐</span>
+          </div>
+          <div>
+            <p class="font-bold text-lg">MINUME 2025</p>
+            <p class="text-xs text-blue-100">Model United Nations</p>
+          </div>
+        </div>
+        <div class="flex gap-8">
+          <button onclick="showPage('sobre-mi')" class="nav-link hover:text-yellow-300 transition duration-300 text-base font-medium uppercase tracking-wide">
+            Delegada
+          </button>
+          <button onclick="showPage('proyecto')" class="nav-link hover:text-yellow-300 transition duration-300 text-base font-medium uppercase tracking-wide">
+            Propuesta
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== PÁGINA: SOBRE MÍ ===================== -->
+  <div id="sobre-mi" class="page-content active">
+    <!-- HEADER CON BANDERA -->
+    <header class="text-white py-24 text-center bg-cover bg-center bg-[#0a1a2a]/90 bg-blend-multiply relative" 
+            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg')">
+      <div class="relative z-10">
+        <h1 class="text-5xl font-bold drop-shadow-2xl">Proyecto SMART</h1>
+        <p class="text-xl mt-3 italic drop-shadow-lg">Shanel Guzmán</p>
+        <p class="text-lg mt-1 drop-shadow-lg">Delegación de Filipinas</p>
+      </div>
+    </header>
+
+    <!-- CONTENIDO SOBRE MÍ -->
+    <section class="max-w-5xl mx-auto bg-white p-10 mt-10 mb-10 rounded-xl shadow-2xl">
+      <h2 class="text-4xl font-bold text-[#0a1a2a] mb-8 border-b-4 border-[#c9a94b] pb-3">Sobre Mí</h2>
+
+      <div class="mb-8">
+        <img src="img/shanel.jpeg" 
+             alt="Shanel Guzmán" 
+             class="w-80 rounded-xl shadow-2xl float-right ml-8 mb-6" />
+
+        <blockquote class="border-l-4 border-[#0a1a2a] bg-gray-50 p-6 italic mb-8 text-lg text-gray-700">
+          "Porque el Señor da la sabiduría; de su boca vienen el conocimiento y la inteligencia."<br>
+          <span class="text-sm font-semibold text-[#0a1a2a] mt-2 block">— Proverbios 2:6</span>
+        </blockquote>
+
+        <p class="leading-relaxed text-lg mb-6">
+          Nací en la República Dominicana, en una ciudad donde aprendí que el verdadero sentido de la grandeza está en servir y no solo en brillar. Actualmente curso la secundaria especializándome como técnico en <strong>Logística y Transporte</strong>, una disciplina que me enseña que incluso el movimiento del mundo obedece a un orden invisible: una coreografía de propósito y dirección.
+        </p>
+      </div>
+
+      <div class="clear-both mb-8">
+        <h3 class="text-2xl font-bold text-[#0a1a2a] mb-4 mt-8">Mi Trayectoria</h3>
+        <p class="leading-relaxed text-lg mb-4">
+          Desde temprana edad, mi voz encontró fuerza en la palabra y mis ideas un hogar en el liderazgo. He tenido el honor de servir como <strong>Presidenta Regional del Consejo Estudiantil</strong>, una experiencia que me permitió comprender a las personas no como coincidencias, sino como universos que debemos aprender a descifrar.
+        </p>
+        <p class="leading-relaxed text-lg mb-4"><strong>Mi formación incluye:</strong></p>
+        <ul class="list-disc ml-8 space-y-2 text-lg mb-6">
+          <li>Participación en <strong>Modelos Regionales de Naciones Unidas</strong> (2023, 2024 y 2025)</li>
+          <li><strong>Congresos de liderazgo</strong> a nivel nacional y regional</li>
+          <li><strong>Olimpíadas de lectura</strong></li>
+          <li>Plataformas juveniles donde no solo representé una institución, sino la esperanza colectiva de quienes sueñan con un mañana distinto</li>
+        </ul>
+        <p class="leading-relaxed text-lg">
+          La música también me forma: actualmente continúo mis <strong>estudios musicales</strong>, donde entendí que la vida se afina como las cuerdas, con tensión justa, disciplina, sensibilidad y fe.
+        </p>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="text-2xl font-bold text-[#0a1a2a] mb-4">Mis Habilidades</h3>
+        <p class="leading-relaxed text-lg">
+          Mis competencias en <strong>oratoria, comunicación, trabajo en equipo y organización estratégica</strong> no son solo herramientas: son puentes para conectar verdades, mover voluntades y dar forma a los cambios que aún no existen.
+        </p>
+      </div>
+
+      <div class="bg-gradient-to-r from-[#0a1a2a] to-[#1a3a5a] text-white p-8 rounded-xl shadow-lg">
+        <h3 class="text-2xl font-bold mb-4">Mi Filosofía</h3>
+        <p class="leading-relaxed text-lg mb-4">
+          Creo firmemente que <strong>el futuro no se predice, se lidera</strong>. Que la esencia del ser no está en lo que posee, sino en lo que despierta en otros. Y que la sabiduría no es un destino, sino un camino interior que comienza cuando decidimos cuestionar, aprender y elevar a quienes caminan a nuestro lado.
+        </p>
+        <p class="leading-relaxed text-lg italic">
+          Soy el resultado de mis preguntas, mis luchas y mi fe. Una mente en movimiento, una voz con propósito, y un corazón que entendió temprano que <strong>liderar es amar en acción</strong>.
+        </p>
+      </div>
+
+      <div class="mt-10 text-center">
+        <button onclick="showPage('proyecto')" 
+                class="bg-[#c9a94b] hover:bg-[#b89a3b] text-white font-bold py-4 px-10 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 text-lg">
+          Ver Proyecto Diplomático →
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== PÁGINA: PROYECTO ===================== -->
+  <div id="proyecto" class="page-content">
+    <!-- HEADER PROYECTO -->
+    <header class="text-white py-20 text-center bg-gradient-to-r from-[#0a1a2a] to-[#1a3a5a]">
+      <h1 class="text-5xl font-bold drop-shadow-lg">Smart Islands for a Smart World</h1>
+      <p class="mt-3 text-xl">Delegación de Filipinas</p>
+      <p class="mt-2 text-lg italic">Shanel Guzmán</p>
+    </header>
+
+    <!-- CONTENIDO DEL PROYECTO ESTILO ONU -->
+    <section class="max-w-6xl mx-auto mt-10 mb-10 px-4">
+      
+      <!-- Resumen Ejecutivo -->
+      <div class="bg-gradient-to-r from-[#003366] to-[#00689d] text-white p-8 rounded-xl shadow-2xl mb-8">
+        <h2 class="text-3xl font-bold mb-4 flex items-center gap-3">
+          <span class="text-3xl">📋</span> Resumen Ejecutivo
+        </h2>
+        <p class="text-lg leading-relaxed text-blue-50">
+          La República de Filipinas presenta ante esta distinguida asamblea una propuesta innovadora para transformar los territorios insulares en ecosistemas inteligentes que armonicen desarrollo tecnológico, sostenibilidad ambiental y prosperidad compartida, estableciendo un nuevo paradigma para la cooperación internacional en la era digital.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+        
+        <!-- Sección numerada estilo ONU -->
+        <div class="border-l-8 border-[#009edb] p-8 bg-gray-50">
+          <div class="flex items-start gap-4">
+            <div class="bg-[#009edb] text-white font-bold text-2xl w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">
+              1
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-[#003366] mb-4">Introducción</h2>
+              <p class="leading-relaxed text-lg text-gray-700">
+                En el actual escenario de la contemporaneidad digital, reconociendo las resoluciones adoptadas por esta augusta Asamblea en materia de desarrollo sostenible, las islas del mundo enfrentan desafíos únicos que demandan soluciones innovadoras, integrales y coordinadas internacionalmente. La República de Filipinas, con sus más de 7,000 islas, se ofrece como laboratorio natural para el desarrollo de iniciativas transformadoras que integren tecnología de vanguardia, sostenibilidad ambiental y desarrollo humano integral, en pleno cumplimiento de los compromisos asumidos en la Agenda 2030.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-l-8 border-[#00689d] p-8">
+          <div class="flex items-start gap-4">
+            <div class="bg-[#00689d] text-white font-bold text-2xl w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">
+              2
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-[#003366] mb-4">Fundamentación</h2>
+              <p class="leading-relaxed text-lg text-gray-700 mb-4">
+                Considerando que el turismo en Filipinas constituye un sector estratégico que genera empleo digno, divisas y oportunidades de desarrollo económico para millones de ciudadanos;
+              </p>
+              <p class="leading-relaxed text-lg text-gray-700 mb-4">
+                Reconociendo que la gestión sostenible de los recursos naturales, la protección de ecosistemas marinos únicos y la adaptación urgente al cambio climático representan imperativos que requieren respuestas inteligentes, coordinadas y respaldadas por la comunidad internacional;
+              </p>
+              <p class="leading-relaxed text-lg text-gray-700">
+                Afirmando que las naciones insulares poseen una vulnerabilidad compartida ante fenómenos globales, pero también una oportunidad única para liderar la transición hacia modelos de desarrollo resilientes y sostenibles que puedan replicarse globalmente.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-l-8 border-[#009edb] p-8 bg-gray-50">
+          <div class="flex items-start gap-4">
+            <div class="bg-[#009edb] text-white font-bold text-2xl w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">
+              3
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-[#003366] mb-4">Justificación y Marco Normativo</h2>
+              <p class="leading-relaxed text-lg text-gray-700 mb-4">
+                Esta iniciativa diplomática responde directamente al llamado histórico de la <strong>Agenda 2030 para el Desarrollo Sostenible</strong>, adoptada por todos los Estados Miembros de las Naciones Unidas, particularmente en lo concerniente a:
+              </p>
+              <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white p-4 rounded-lg border-2 border-blue-100 hover:shadow-lg transition">
+                  <p class="font-bold text-[#003366] mb-2">🏭 ODS 9</p>
+                  <p class="text-gray-700">Industria, Innovación e Infraestructura</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border-2 border-blue-100 hover:shadow-lg transition">
+                  <p class="font-bold text-[#003366] mb-2">🏙️ ODS 11</p>
+                  <p class="text-gray-700">Ciudades y Comunidades Sostenibles</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border-2 border-blue-100 hover:shadow-lg transition">
+                  <p class="font-bold text-[#003366] mb-2">🌡️ ODS 13</p>
+                  <p class="text-gray-700">Acción por el Clima</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border-2 border-blue-100 hover:shadow-lg transition">
+                  <p class="font-bold text-[#003366] mb-2">🌊 ODS 14</p>
+                  <p class="text-gray-700">Vida Submarina</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-lg text-gray-700">
+                La propuesta integra tecnología 4.0 con sabiduría ancestral y conocimientos tradicionales, reconociendo que el progreso auténtico no se mide exclusivamente en infraestructura, sino en la capacidad colectiva de preservar la identidad cultural y la diversidad biológica mientras se abraza la innovación responsable.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-l-8 border-[#00689d] p-8">
+          <div class="flex items-start gap-4">
+            <div class="bg-[#00689d] text-white font-bold text-2xl w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">
+              4
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-[#003366] mb-4">Objetivos de la Propuesta</h2>
+              
+              <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg mb-6">
+                <p class="font-bold text-[#003366] text-xl mb-3">📍 Objetivo General</p>
+                <p class="leading-relaxed text-lg text-gray-700">
+                  Diseñar e implementar, con el apoyo de la comunidad internacional, un ecosistema digital inteligente en las islas de Filipinas que potencie el turismo sostenible, la conservación ambiental efectiva y el desarrollo económico inclusivo mediante tecnologías de Internet de las Cosas (IoT), inteligencia artificial y plataformas colaborativas de participación ciudadana.
+                </p>
+              </div>
+
+              <p class="font-bold text-[#003366] text-xl mb-4">🎯 Objetivos Específicos</p>
+              <div class="space-y-3">
+                <div class="flex items-start gap-3 bg-blue-50 p-4 rounded-lg">
+                  <span class="text-[#009edb] font-bold text-xl">→</span>
+                  <p class="text-gray-700">Desarrollar e instalar sensores inteligentes para monitoreo ambiental en tiempo real en zonas de alta biodiversidad</p>
+                </div>
+                <div class="flex items-start gap-3 bg-blue-50 p-4 rounded-lg">
+                  <span class="text-[#009edb] font-bold text-xl">→</span>
+                  <p class="text-gray-700">Crear una plataforma digital colaborativa para gestión turística sostenible con participación de todos los actores relevantes</p>
+                </div>
+                <div class="flex items-start gap-3 bg-blue-50 p-4 rounded-lg">
+                  <span class="text-[#009edb] font-bold text-xl">→</span>
+                  <p class="text-gray-700">Promover competencias digitales y emprendimiento tecnológico en comunidades locales e insulares</p>
+                </div>
+                <div class="flex items-start gap-3 bg-blue-50 p-4 rounded-lg">
+                  <span class="text-[#009edb] font-bold text-xl">→</span>
+                  <p class="text-gray-700">Fomentar alianzas internacionales para transferencia tecnológica y cooperación Sur-Sur</p>
+                </div>
+                <div class="flex items-start gap-3 bg-blue-50 p-4 rounded-lg">
+                  <span class="text-[#009edb] font-bold text-xl">→</span>
+                  <p class="text-gray-700">Posicionar a Filipinas como referente global en innovación para territorios insulares</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-l-8 border-[#009edb] p-8 bg-gray-50">
+          <div class="flex items-start gap-4">
+            <div class="bg-[#009edb] text-white font-bold text-2xl w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">
+              5
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-[#003366] mb-6">Estrategias de Acción y Mecanismos de Implementación</h2>
+              
+              <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#009edb]">
+                  <h3 class="font-bold text-[#003366] text-xl mb-3">📡 Estrategia I: Infraestructura Tecnológica Ambiental</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    Implementación progresiva de sensores ambientales inteligentes en zonas costeras prioritarias para monitoreo continuo de calidad del agua, biodiversidad marina, niveles de contaminación y sistemas de alerta temprana de desastres naturales, con tecnología de código abierto y acceso público a los datos.
+                  </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#00689d]">
+                  <h3 class="font-bold text-[#003366] text-xl mb-3">🌐 Estrategia II: Plataforma Digital Colaborativa</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    Creación de la plataforma digital multilateral "Smart Islands Network" que conecte turistas responsables, comunidades locales organizadas, autoridades gubernamentales y organizaciones ambientales internacionales, facilitando la toma de decisiones basada en evidencia y la participación ciudadana efectiva.
+                  </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#009edb]">
+                  <h3 class="font-bold text-[#003366] text-xl mb-3">🎓 Estrategia III: Desarrollo de Capacidades Digitales</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    Programas integrales de capacitación en competencias digitales del siglo XXI y emprendimiento tecnológico dirigidos prioritariamente a jóvenes, mujeres y comunidades insulares tradicionalmente marginadas del desarrollo tecnológico.
+                  </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#00689d]">
+                  <h3 class="font-bold text-[#003366] text-xl mb-3">🤝 Estrategia IV: Cooperación Internacional y Multilateralismo</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    Establecimiento de alianzas estratégicas con países insulares del Pacífico, Caribe y África, así como con organizaciones multilaterales, para intercambio de buenas prácticas, transferencia tecnológica horizontal y movilización de recursos para el desarrollo sostenible.
+                  </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#009edb]">
+                  <h3 class="font-bold text-[#003366] text-xl mb-3">🌿 Estrategia V: Resiliencia Climática y Adaptación</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    Desarrollo de sistemas integrados de resiliencia climática mediante infraestructura verde (bosques urbanos, corredores biológicos) y azul (manglares, arrecifes de coral) inteligente, con monitoreo en tiempo real y respuesta adaptativa ante fenómenos meteorológicos extremos.
+                  </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#00689d]">
+                  <h3 class="font-bold text-[#003366] text-xl mb-3">🏆 Estrategia VI: Promoción Internacional y Diplomacia Pública</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    Campaña global de promoción de Filipinas como destino pionero de turismo inteligente y sostenible, posicionando al país en foros internacionales como líder en innovación insular y atrayendo inversión extranjera directa responsable.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-l-8 border-[#00689d] p-8">
+          <div class="flex items-start gap-4">
+            <div class="bg-[#00689d] text-white font-bold text-2xl w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">
+              6
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-[#003366] mb-6">Impacto Esperado y Resultados Medibles</h2>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-lg border-2 border-green-200 hover:shadow-xl transition">
+                  <p class="text-3xl mb-3">💰</p>
+                  <h3 class="font-bold text-[#003366] mb-2">Impacto Económico</h3>
+                  <p class="text-gray-700">Incremento proyectado del <strong>30%</strong> en ingresos por turismo sostenible certificado en un plazo de <strong>5 años</strong>, con distribución equitativa entre comunidades locales.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-lg border-2 border-blue-200 hover:shadow-xl transition">
+                  <p class="text-3xl mb-3">💻</p>
+                  <h3 class="font-bold text-[#003366] mb-2">Impacto Tecnológico</h3>
+                  <p class="text-gray-700">Formación certificada de <strong>10,000 jóvenes</strong> en competencias digitales avanzadas, con enfoque en inteligencia artificial, análisis de datos y desarrollo sostenible.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-lg border-2 border-purple-200 hover:shadow-xl transition">
+                  <p class="text-3xl mb-3">🤝</p>
+                  <h3 class="font-bold text-[#003366] mb-2">Impacto Social</h3>
+                  <p class="text-gray-700">Empoderamiento verificable de comunidades locales mediante inclusión digital efectiva, reducción de brechas digitales de género y generacionales, y participación ciudadana en gobernanza.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-teal-50 to-white p-6 rounded-lg border-2 border-teal-200 hover:shadow-xl transition">
+                  <p class="text-3xl mb-3">🌳</p>
+                  <h3 class="font-bold text-[#003366] mb-2">Impacto Ambiental</h3>
+                  <p class="text-gray-700">Reducción medible del <strong>40%</strong> en impacto ambiental negativo del turismo, restauración de ecosistemas degradados y aumento de áreas marinas protegidas.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-lg border-2 border-yellow-200 hover:shadow-xl transition md:col-span-2">
+                  <p class="text-3xl mb-3">🌍</p>
+                  <h3 class="font-bold text-[#003366] mb-2">Impacto Diplomático e Internacional</h3>
+                  <p class="text-gray-700">Posicionamiento de Filipinas como líder regional en innovación insular, fortalecimiento de alianzas Sur-Sur, y establecimiento de un modelo replicable para los <strong>52 Estados insulares</strong> miembros de la ONU.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-l-8 border-[#009edb] p-8 bg-gradient-to-br from-[#003366] to-[#00689d] text-white">
+          <div class="flex items-start gap-4">
+            <div class="bg-white text-[#003366] font-bold text-2xl w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">
+              7
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold mb-6">Conclusión y Llamado a la Acción</h2>
+              <div class="space-y-4 text-lg leading-relaxed">
+                <p>
+                  Honorables delegados, distinguidos representantes de los Estados Miembros:
+                </p>
+                <p>
+                  La propuesta "Smart Islands for a Smart World" refleja la visión compartida de Filipinas y la comunidad internacional de transformar los territorios insulares en laboratorios vivos de innovación sostenible, donde la tecnología sirva al ser humano y no al revés.
+                </p>
+                <p>
+                  Esta iniciativa no busca únicamente transformar infraestructuras físicas, sino despertar consciencias globales: entender colectivamente que el progreso auténtico honra la tierra que habitamos, respeta las culturas que nos definen y protege el futuro que construimos solidariamente.
+                </p>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border-2 border-white/30 italic my-6">
+                  <p class="text-xl">
+                    "Porque las islas inteligentes no son solamente aquellas dotadas con tecnología de vanguardia, sino aquellas que comprenden que la verdadera sabiduría colectiva reside en el equilibrio entre lo que somos como civilización y lo que aspiramos a ser como familia humana."
+                  </p>
+                </div>
+                <p class="font-bold text-xl">
+                  La República de Filipinas solicita respetuosamente el apoyo de esta distinguida Asamblea para la adopción y respaldo multilateral de esta propuesta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Información de contacto diplomático -->
+        <div class="bg-gray-50 p-8 border-t-4 border-yellow-400">
+          <div class="text-center">
+            <p class="text-sm text-gray-600 mb-2">DOCUMENTO OFICIAL</p>
+            <p class="font-bold text-[#003366]">República de Filipinas | MINUME 2025</p>
+            <p class="text-sm text-gray-600 mt-2">Delegada: Shanel Guzmán</p>
+            <p class="text-sm text-gray-600">Misión Permanente ante las Naciones Unidas</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-10">
+        <button onclick="showPage('sobre-mi')" 
+                class="bg-[#009edb] hover:bg-[#00689d] text-white font-bold py-4 px-12 rounded-lg shadow-xl transition duration-300 transform hover:scale-105 text-lg uppercase tracking-wide">
+          ← Volver al Perfil de la Delegada
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function showPage(pageId) {
+      // Ocultar todas las páginas
+      document.querySelectorAll('.page-content').forEach(page => {
+        page.classList.remove('active');
+      });
+      
+      // Mostrar la página seleccionada
+      document.getElementById(pageId).classList.add('active');
+      
+      // Scroll suave hacia arriba
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
