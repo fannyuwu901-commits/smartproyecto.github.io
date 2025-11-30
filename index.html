@@ -15,10 +15,10 @@
     }
   </style>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-500">
+<body class="bg-gray-100 text-gray-900 font-sans transition-colors duration-500">
 
   <!-- NAVBAR DIPLOMÁTICO -->
-  <nav class="bg-[#003366] dark:bg-gray-800 text-white py-3 shadow-md sticky top-0 z-50 border-b-2 border-[#001f4d]">
+  <nav class="bg-[#003366] text-white py-3 shadow-md sticky top-0 z-50 border-b-2 border-[#001f4d]">
     <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
@@ -36,7 +36,6 @@
         <button onclick="showPage('proyecto')" class="hover:text-yellow-300 transition text-base font-medium uppercase tracking-wide">
           Propuesta
         </button>
-        <button onclick="toggleDarkMode()" class="ml-4 px-3 py-1 bg-yellow-300 dark:bg-yellow-600 rounded-full font-semibold text-sm transition">🌓 Modo</button>
       </div>
     </div>
   </nav>
@@ -52,16 +51,16 @@
       </div>
     </header>
 
-    <section class="max-w-5xl mx-auto bg-white dark:bg-gray-800 p-10 mt-10 mb-10 rounded-xl shadow-2xl transition-colors duration-500">
-      <h2 class="text-4xl font-bold text-[#0a1a2a] dark:text-yellow-300 mb-8 border-b-4 border-[#c9a94b] pb-3">Sobre Mí</h2>
+    <section class="max-w-5xl mx-auto bg-white p-10 mt-10 mb-10 rounded-xl shadow-2xl">
+      <h2 class="text-4xl font-bold text-[#0a1a2a] mb-8 border-b-4 border-[#c9a94b] pb-3">Sobre Mí</h2>
 
       <div class="mb-8">
         <a href="https://ibb.co/3YC3tM3P">
-          <img src="https://i.ibb.co/BKCp8rpY/shanel.jpg" alt="shanel" border="0" class="rounded-lg shadow-md hover:scale-105 transition transform">
+          <img src="https://i.ibb.co/BKCp8rpY/shanel.jpg" alt="shanel" border="0" class="rounded-lg shadow-md">
         </a>
-        <blockquote class="border-l-4 border-[#0a1a2a] bg-gray-50 dark:bg-gray-700 p-6 italic mb-8 text-lg text-gray-700 dark:text-gray-200">
+        <blockquote class="border-l-4 border-[#0a1a2a] bg-gray-50 p-6 italic mb-8 text-lg text-gray-700">
           "Porque el Señor da la sabiduría; de su boca vienen el conocimiento y la inteligencia."<br>
-          <span class="text-sm font-semibold text-[#0a1a2a] dark:text-gray-300 mt-2 block">— Proverbios 2:6</span>
+          <span class="text-sm font-semibold text-[#0a1a2a] mt-2 block">— Proverbios 2:6</span>
         </blockquote>
 
         <p class="leading-relaxed text-lg mb-6">
@@ -70,7 +69,7 @@
       </div>
 
       <div class="clear-both mb-8">
-        <h3 class="text-2xl font-bold text-[#0a1a2a] dark:text-yellow-300 mb-4 mt-8">Mi Trayectoria</h3>
+        <h3 class="text-2xl font-bold text-[#0a1a2a] mb-4 mt-8">Mi Trayectoria</h3>
         <p class="leading-relaxed text-lg mb-4">
           He tenido el honor de servir como <strong>Presidenta Regional del Consejo Estudiantil</strong>, y participar en <strong>Modelos Regionales de Naciones Unidas</strong> (2023, 2024 y 2025), congresos de liderazgo y olimpíadas de lectura.
         </p>
@@ -80,13 +79,13 @@
       </div>
 
       <div class="mb-8">
-        <h3 class="text-2xl font-bold text-[#0a1a2a] dark:text-yellow-300 mb-4">Mis Habilidades</h3>
+        <h3 class="text-2xl font-bold text-[#0a1a2a] mb-4">Mis Habilidades</h3>
         <p class="leading-relaxed text-lg">
           Competencias en <strong>oratoria, comunicación, trabajo en equipo y organización estratégica</strong> son puentes para conectar verdades y dar forma a cambios positivos.
         </p>
       </div>
 
-      <div class="bg-gradient-to-r from-[#0a1a2a] to-[#1a3a5a] dark:from-gray-700 dark:to-gray-900 text-white p-8 rounded-xl shadow-lg transition-colors duration-500">
+      <div class="bg-gradient-to-r from-[#0a1a2a] to-[#1a3a5a] text-white p-8 rounded-xl shadow-lg">
         <h3 class="text-2xl font-bold mb-4">Mi Filosofía</h3>
         <p class="leading-relaxed text-lg mb-4">
           Creo firmemente que <strong>el futuro no se predice, se lidera</strong>. La esencia del ser no está en lo que posee, sino en lo que despierta en otros.
@@ -107,36 +106,101 @@
 
   <!-- ===================== PÁGINA: PROYECTO ===================== -->
   <div id="proyecto" class="page-content fade-in">
-    <header class="text-white py-20 text-center bg-gradient-to-r from-[#0a1a2a] to-[#1a3a5a] dark:from-gray-700 dark:to-gray-900">
+    <header class="text-white py-20 text-center bg-gradient-to-r from-[#0a1a2a] to-[#1a3a5a]">
       <h1 class="text-5xl font-bold drop-shadow-lg">Smart Islands for a Smart World</h1>
       <p class="mt-3 text-xl">Delegación de Filipinas</p>
       <p class="mt-2 text-lg italic">Shanel Guzmán</p>
     </header>
 
     <section class="max-w-6xl mx-auto mt-10 mb-10 px-4">
-      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl overflow-hidden p-8 space-y-6 transition-colors duration-500">
+      <div class="bg-white rounded-xl shadow-2xl overflow-hidden p-8 space-y-8">
         
         <!-- Introducción -->
         <div>
-          <h2 class="text-3xl font-bold text-[#003366] dark:text-yellow-300 mb-4">Introducción</h2>
-          <p class="leading-relaxed text-lg text-gray-700 dark:text-gray-200 mb-3">
+          <h2 class="text-3xl font-bold text-[#003366] mb-4">Introducción</h2>
+          <p class="leading-relaxed text-lg text-gray-700 mb-3">
             En el actual escenario de la contemporaneidad digital, el turismo se consolida como un motor de innovación y desarrollo sostenible.
           </p>
-          <p class="leading-relaxed text-lg text-gray-700 dark:text-gray-200 mb-3">
-            La República de Filipinas impulsa ante este foro el proyecto “Smart Islands for a Smart World”, integrando tecnología, sostenibilidad y cooperación internacional.
+          <p class="leading-relaxed text-lg text-gray-700 mb-3">
+            La República de Filipinas impulsa ante este foro el proyecto <strong>“Smart Islands for a Smart World”</strong>, integrando tecnología, sostenibilidad y cooperación internacional.
           </p>
         </div>
 
         <!-- Fundamentación -->
         <div>
-          <h2 class="text-3xl font-bold text-[#003366] dark:text-yellow-300 mb-4">Fundamentación</h2>
-          <p class="leading-relaxed text-lg text-gray-700 dark:text-gray-200 mb-3">
-            El turismo filipino requiere innovación tecnológica y sostenibilidad para competir globalmente.
+          <h2 class="text-3xl font-bold text-[#003366] mb-4">Fundamentación</h2>
+          <p class="leading-relaxed text-lg text-gray-700 mb-3">
+            El turismo filipino requiere innovación tecnológica y sostenibilidad para competir globalmente, garantizando crecimiento económico, conservación ambiental y desarrollo social de las comunidades insulares.
           </p>
         </div>
 
-        <!-- Resto del contenido igual con dark mode aplicado... -->
+        <!-- Justificación -->
+        <div>
+          <h2 class="text-3xl font-bold text-[#003366] mb-4">Justificación</h2>
+          <p class="leading-relaxed text-lg text-gray-700 mb-3">
+            La propuesta se alinea con la <strong>Agenda 2030</strong> y busca fortalecer islas resilientes mediante tecnología, educación digital, y cooperación internacional para un turismo inteligente y sostenible.
+          </p>
+        </div>
 
+        <!-- Objetivos -->
+        <div>
+          <h2 class="text-3xl font-bold text-[#003366] mb-4">Objetivos</h2>
+          <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg mb-6">
+            <p class="font-bold text-[#003366] text-xl mb-3">📍 Objetivo General</p>
+            <p class="leading-relaxed text-lg text-gray-700">
+              Diseñar un modelo de turismo inteligente y sostenible mediante sensores, tecnología y cooperación internacional.
+            </p>
+          </div>
+          <p class="font-bold text-[#003366] text-xl mb-4">🎯 Objetivos Específicos</p>
+          <ul class="list-decimal ml-8 space-y-2 text-lg text-gray-700">
+            <li>Red de sensores inteligentes para monitoreo ambiental y turístico.</li>
+            <li>Plataforma digital nacional de transporte, alojamiento y servicios sostenibles.</li>
+            <li>Formación en competencias digitales y sostenibilidad en comunidades locales.</li>
+            <li>Alianzas internacionales para transferencia tecnológica e inversión verde.</li>
+            <li>Posicionar a Filipinas como referente en turismo inteligente y carbono-neutral.</li>
+          </ul>
+        </div>
+
+        <!-- Estrategias de Acción -->
+        <div>
+          <h2 class="text-3xl font-bold text-[#003366] mb-4">Estrategias de Acción</h2>
+          <ul class="list-disc ml-8 space-y-2 text-lg text-gray-700">
+            <li>Dotación de sensores y digitalización turística.</li>
+            <li>Plataforma nacional “Smart Islands Network”.</li>
+            <li>Educación e inclusión digital en comunidades locales.</li>
+            <li>Cooperación internacional y diplomacia verde.</li>
+            <li>Resiliencia climática y gestión ambiental.</li>
+            <li>Promoción internacional y competitividad.</li>
+          </ul>
+        </div>
+
+        <!-- Impacto Esperado -->
+        <div>
+          <h2 class="text-3xl font-bold text-[#003366] mb-4">Impacto Esperado</h2>
+          <ul class="list-disc ml-8 space-y-2 text-lg text-gray-700">
+            <li><strong>Económico:</strong> Diversificación del turismo y creación de empleo verde.</li>
+            <li><strong>Tecnológico:</strong> Sistemas inteligentes de gestión de datos y monitoreo.</li>
+            <li><strong>Social:</strong> Inclusión de comunidades locales y empoderamiento juvenil.</li>
+            <li><strong>Ambiental:</strong> Conservación y resiliencia climática.</li>
+            <li><strong>Diplomático:</strong> Liderazgo filipino en cooperación turística internacional.</li>
+          </ul>
+        </div>
+
+        <!-- Conclusión -->
+        <div>
+          <h2 class="text-3xl font-bold text-[#003366] mb-4">Conclusión</h2>
+          <p class="leading-relaxed text-lg text-gray-700">
+            La propuesta refleja la visión de Filipinas como laboratorio de innovación y sostenibilidad, transformando el turismo en un motor global de desarrollo sostenible, inclusivo y tecnológico.
+          </p>
+        </div>
+
+        <!-- Footer interno -->
+        <div class="bg-gray-50 p-6 rounded-lg text-center">
+          <p class="text-sm text-gray-600 mb-2">DOCUMENTO OFICIAL</p>
+          <p class="font-bold text-[#003366]">República de Filipinas | MINUME 2025</p>
+          <p class="text-sm text-gray-600 mt-2">Delegada: Shanel Guzmán</p>
+          <p class="text-sm text-gray-600">Misión Permanente ante las Naciones Unidas</p>
+        </div>
       </div>
 
       <div class="text-center mt-10">
@@ -151,14 +215,8 @@
   <script>
     function showPage(pageId) {
       document.querySelectorAll('.page-content').forEach(page => page.classList.remove('active'));
-      const page = document.getElementById(pageId);
-      page.classList.add('active');
-      page.classList.add('fade-in');
+      document.getElementById(pageId).classList.add('active');
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark');
     }
   </script>
 
